@@ -28,6 +28,7 @@ const ModelSelect: React.FC<ModelSelectProps> = ({ make, onModelChange }) => {
     axios
       .get(url)
       .then((response) => {
+        console.log(response.data);
         const modelNames = [
           ...new Set(
             response.data.Results.map(

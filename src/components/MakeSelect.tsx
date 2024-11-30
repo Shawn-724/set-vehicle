@@ -28,6 +28,7 @@ const MakeSelect: React.FC<MakeSelectProps> = ({ year, onMakeChange }) => {
     axios
       .get(url)
       .then((response) => {
+        console.log(response.data);
         const makeNames = [
           ...new Set(
             response.data.Results.map(

@@ -5,7 +5,7 @@ import "../styles/Select.css";
 const { Option } = Select;
 
 interface YearSelectProps {
-  onYearChange: (value: number | undefined) => void;
+  onYearChange: (year: number | undefined) => void;
 }
 
 const YearSelect: React.FC<YearSelectProps> = ({ onYearChange }) => {
